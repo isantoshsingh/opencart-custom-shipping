@@ -43,7 +43,7 @@
               <select name="custom_tax_class_id" id="input-tax-class" class="form-control">
                 <option value="0"><?php echo $text_none; ?></option>
                 <?php foreach ($tax_classes as $tax_class) { ?>
-                <?php if ($tax_class['tax_class_id'] == $flat_tax_class_id) { ?>
+                <?php if ($tax_class['tax_class_id'] == $custom_tax_class_id) { ?>
                 <option value="<?php echo $tax_class['tax_class_id']; ?>" selected="selected"><?php echo $tax_class['title']; ?></option>
                 <?php } else { ?>
                 <option value="<?php echo $tax_class['tax_class_id']; ?>"><?php echo $tax_class['title']; ?></option>
